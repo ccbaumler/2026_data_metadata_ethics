@@ -1,14 +1,15 @@
 ---
-title: "Quarto Presentation Template"
-subtitle: "Modern slides with code, diagrams, and math"
-author: "Your Name"
+title: "Research, Data, Ethics..."
+subtitle: "Research is the scientific method"
+author: "Colton Baumler"
 date: today
 date-format: "MMMM D, YYYY"
 format:
   revealjs:
     theme: [default, custom.scss]
-    logo: "fig/logo.svg"
-    footer: "Quarto Presentation Template"
+    css: [timer.css]
+    logo: "fig/UC-Davis-Seal-Logo.png"
+    footer: "Data, Metadata, and Ethics"
     transition: fade
     transition-speed: fast
     slide-number: c/t
@@ -21,169 +22,320 @@ format:
 editor: visual
 ---
 
-## Features
 
-This template includes everything you need for technical presentations:
+## Define research - Quick Write
 
-- Modern styling with Inter font
-- Syntax-highlighted code blocks
-- Mermaid diagrams
-- LaTeX math equations
-- Responsive tables
-- Callout boxes
-- Speaker notes
+```{r}
+#| echo: false
+countdown::countdown(minutes = 1, seconds = 0, warn_when = 15, 
+                     right = "05%", top = "10%",
+                     blink_colon = TRUE,
+                     play_sound = "audio/smb_coin.wav",
+                     id = "special_timer")
+```
+
+::: {.center-xy}
+
+[In one sentence, <br></br> ***what is the most important aspect of research?***]{style="font-size: 2em;" .fragment}
+
+:::
+
+## Research is guided by a question
+
+:::{.columns}
+
+::::{.column}
+
+![](fig/scientific_method.svg)
+
+::::
+
+::::{.column .incremental}
+
+- Inciting curiosity in something
+- Define a ***research question*** to explore
+- Communicate results in a scientific article
+
+::::
+
+:::
 
 ::: {.notes}
-Press **S** to open speaker view with notes and timer.
+What is the common denominator of each step?
+
+"What is the research question?"
 :::
 
-## Code Blocks
+## The simple structure a research question
 
-```python
-import pandas as pd
-import matplotlib.pyplot as plt
+:::{.incremental}
 
-# Load and process data
-df = pd.read_csv("data.csv")
-summary = df.groupby("category").agg({
-    "value": ["mean", "std", "count"]
-})
+- A research question is [a complex sentence](https://owl.purdue.edu/owl/graduate_writing/introduction_to_writing/documents/revising-and-editing/sentence-structure-activity.pdf){target="_blank"} containing:
 
-# Visualize results
-summary.plot(kind="bar", figsize=(10, 6))
-plt.title("Category Summary")
-plt.tight_layout()
-plt.savefig("output.png")
-```
+  - a subject,
+  - an independent clause, (a complete thought)
+  - and a dependant clause (an incomplete thought)
 
-## Data Pipeline
 
-```{mermaid}
-%%| fig-width: 9
-flowchart LR
-    A[Source Data] --> B[Extract]
-    B --> C[Transform]
-    C --> D[Load]
-    D --> E[(Data Warehouse)]
-    E --> F[Analytics]
-    E --> G[Dashboards]
-```
+- A clause constitutes:
+  - a subject
+  - a verb
 
-## Sequence Diagram
-
-```{mermaid}
-sequenceDiagram
-    participant U as User
-    participant A as API
-    participant D as Database
-
-    U->>A: Request data
-    A->>D: Query
-    D-->>A: Results
-    A-->>U: JSON response
-```
-
-## Mathematics
-
-Inline equations work naturally: $E = mc^2$
-
-Display equations for complex formulas:
-
-$$
-\mathcal{L} = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu} + \bar{\psi}(i\gamma^\mu D_\mu - m)\psi
-$$
-
-$$
-P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}
-$$
-
-## Two Columns
-
-:::: {.columns}
-
-::: {.column width="50%"}
-### Benefits
-
-- Side-by-side comparisons
-- Text alongside visuals
-- Efficient use of space
-- Clear organization
 :::
 
-::: {.column width="50%"}
-### Metrics
+## Step 1: Identify a Research Qustion
 
-| Metric | Value |
-|--------|------:|
-| Users | 12,450 |
-| Sessions | 45,230 |
-| Conversion | 3.2% |
-| Revenue | $84K |
+::: {.columns}
+
+::::{.column}
+
+- What is the Research Question?
+  - Research Subject (RS): _______
+  - Independent Variable (IV): _______
+  - Dependent Variable (DV): _______
+
+Example question: ~~How can we stop malaria?~~
+
+::::
+
+::::{.column}
+
+:::{.incremental}
+
+- Can the pathogenic protozoa be eliminated from within a mosquito by gene drive methods?
+  - mosquito (vector of malaria)
+  - gene drive methods
+  - pathogenic protozoa population
+
 :::
 
 ::::
 
-## Callouts
-
-::: {.callout-note}
-Callouts help important information stand out from the rest of your content.
 :::
 
-::: {.callout-tip}
-### Keyboard Shortcuts
-Press **F** for fullscreen, **O** for overview, **S** for speaker notes.
+## Step 2: If-Then-Because
+
+- A hypothesis can be as simple as sequentially using **If-Then-Because**
+  - IF = RS + IV
+  - THEN = DV
+  - Because = Reasoning and context
+
+| IF | THEN | BECAUSE|
+|:---|:---:|---:|
+| If gene-drive mosquitos are released in the wild | Then the pathogenic protozoa population will be eliminated | because the gene drive methods beneficially selects gene-drive mosquitos for breeding and uses two separate protozoan targets to eliminate protozoa in mosquitos. |
+
+## Define research - Quick Write
+
+```{r}
+#| echo: false
+countdown::countdown(minutes = 10, seconds = 0, warn_when = 15, 
+                     right = "05%", top = "10%",
+                     blink_colon = TRUE,
+                     play_sound = "audio/smb_coin.wav",
+                     id = "special_timer")
+```
+
+::: {.center-xy}
+
+- What is the Research Question?
+  - Research Subject (RS): _______
+  - Independent Variable (IV): _______
+  - Dependent Variable (DV): _______
+
+- A hypothesis can be as simple as sequentially using **If-Then-Because**
+  - IF = RS + IV
+  - THEN = DV
+  - Because = Reasoning and context
+
+
 :::
 
-::: {.callout-warning}
-Always test your presentation in the browser you'll use for presenting.
+## Research begins and ends with a **question**
+
+:::{.incremental}
+
+- And requires **reproducibility**
+  - Ability to repeat the same analysis with the same data and get the same result.
+
 :::
 
-## Step-by-Step Reveal
+![](fig/research-data-lifecycle.svg){fig-align="center" fig-alt="The life cycle of research." width=20%}
 
-Content can appear incrementally:
 
-::: {.incremental}
-- First, introduce your concept
-- Then, add supporting details
-- Finally, summarize key points
+## Tabular Data Structure
+
+:::{.columns}
+
+::::{.column}
+
+- Each column is a variable (a feature of the research question)
+- Each row is an observation (a single data collection event)
+
+::::
+
+::::{.column}
+
+```{R}
+library(gt)
+library(tibble)
+
+# 1. Create data with 4 rows and an explicit row number column
+blank_data <- tibble(
+  row_id   = as.character(1:4), # This will become our row numbers
+  Column_1 = rep("", 4),
+  Column_2 = rep("", 4),
+  Column_3 = rep("", 4),
+  Column_4 = rep("", 4)
+)
+
+# 2. Pass to gt in a single, smooth pipeline
+final_table <- gt(blank_data, rowname_col = "row_id") |> 
+  tab_header(
+    title = "Table",
+    subtitle = "Empty of data"
+  ) |> 
+  tab_source_note(
+    source_note = "No data available for the current selection." )|>
+  tab_options(
+    table_body.vlines.style = "solid",
+    table_body.vlines.color = "#D3D3D3",
+    table_body.vlines.width = px(1),
+    column_labels.vlines.style = "solid",
+    column_labels.vlines.color = "#D3D3D3",
+    column_labels.vlines.width = px(1)
+  )
+
+# Display the table
+final_table
+```
+
+::::
+
 :::
 
-This keeps your audience focused on one idea at a time.
+## Data Types
 
-## Comparison Table
+:::{.columns}
 
-| Feature | Basic | Pro | Enterprise |
-|---------|:-----:|:---:|:----------:|
-| Projects | 3 | 25 | Unlimited |
-| Storage | 1 GB | 50 GB | 500 GB |
-| API Access | - | Limited | Full |
-| Support | Community | Email | Dedicated |
-| SSO | - | - | Yes |
+::::{.column}
 
-## Images
+- There are standard atomic variables in R
+- Dates are an example of additional data types:
+  - `r as.Date(c("2026-01-01", "2026-04-15", "2026-08-22", "2026-12-25"))`
 
-![Sample visualization from Unsplash](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop){fig-align="center"}
+::::
 
-## Quotes
+::::{.column}
 
-> The best way to predict the future is to invent it.
->
-> --- Alan Kay
+```{R}
+library(gt)
+library(tibble)
 
-Use blockquotes for citations, testimonials, or emphasis.
+# 1. Create data with 4 rows showing standard R data types
+type_data <- tibble(
+  row_id = as.character(1:4), 
+  String = c("Hello", "Hi", "hi", "Morning"),
+  Int    = c(1L, 3L, 5L, 100L), # 'L' forces R to store these as true Integers
+  Flt    = c(0.35, 0.5, 1.03, 2.14),
+  Bool   = c(TRUE, FALSE, TRUE, TRUE)
+)
 
-## Get Started
+# 2. Pass to gt in a single, smooth pipeline
+final_table <- gt(type_data, rowname_col = "row_id") |> 
+  tab_header(
+    title = "Standard Data Types in R",
+    subtitle = "A demonstration of Character, Integer, Double, and Logical types"
+  ) |> 
+  tab_source_note(
+    source_note = "Data types mapped using standard R vectors."
+  ) |>
+  tab_options(
+    table_body.vlines.style = "solid",
+    table_body.vlines.color = "#D3D3D3",
+    table_body.vlines.width = px(1),
+    column_labels.vlines.style = "solid",
+    column_labels.vlines.color = "#D3D3D3",
+    column_labels.vlines.width = px(1)
+  )
 
-### Quick Setup
+# Display the table
+final_table
+```
 
-1. Click **Use this template** on GitHub
-2. Clone your repository locally
-3. Edit `content/index.qmd`
-4. Run `make devel` to preview
-5. Run `make deploy` to publish
+::::
 
-### Resources
+:::
 
-- [Quarto RevealJS Docs](https://quarto.org/docs/presentations/revealjs/)
-- [Mermaid Diagram Syntax](https://mermaid.js.org/)
-- [LaTeX Math Reference](https://katex.org/docs/supported.html)
+## Metadata
+
+:::{.columns}
+
+::::{.column}
+
+- Information about the data
+  - Project READMEs are high-level overviews of the project
+  - Workflow diagrams are depictions of the processes within a project
+  - Data dictionaries are categorized observations ABOUT the data
+  - Data biographies are short, descriptive narrative about the who, what, where, when, why of a dataset.
+    - Used to expose biases within the data!
+
+::::
+
+::::{.column}
+
+```{R}
+library(gt)
+library(tibble)
+
+# 1. Create data with 4 rows showing standard R data types
+type_data <- tibble(
+  row_id = as.character(1:4), 
+  greeting_used = c("Hello", "Hi", "hi", "Morning"),
+  count    = c(1L, 3L, 5L, 100L), # 'L' forces R to store these as true Integers
+  norm_count    = c(0.35, 0.5, 1.03, 2.14),
+  presented_w_smile   = c(TRUE, FALSE, TRUE, TRUE)
+)
+
+# 2. Pass to gt in a single, smooth pipeline
+final_table <- gt(type_data, rowname_col = "row_id") |> 
+  tab_header(
+    title = "Typical dataframe in R",
+    subtitle = "A demonstration of metadata"
+  ) |> 
+  tab_source_note(
+    source_note = "The datatypes are still here too!"
+  ) |>
+  tab_options(
+    table_body.vlines.style = "solid",
+    table_body.vlines.color = "#D3D3D3",
+    table_body.vlines.width = px(1),
+    column_labels.vlines.style = "solid",
+    column_labels.vlines.color = "#D3D3D3",
+    column_labels.vlines.width = px(1)
+  )
+
+# Display the table
+final_table
+```
+
+::::
+
+:::
+
+## Ethical ramification of Data and Metadata
+
+- Atenas et al. 2023 did a literature review to develop an 8-item ethics framework:
+  - Respect autonomy
+  - Respect privacy
+  - Promote fairness
+  - Address equality
+  - Do no harm
+  - Promote sovereignty
+  - Address bias
+  - Challenge power structures
+
+:::{.center-xy}
+
+[Reframing data ethics in research methods education: a pathway to critical data literacy](doi.org/10.1186/s41239-023-00380-y)
+
+:::
