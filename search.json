@@ -1,86 +1,79 @@
 [
   {
-    "objectID": "index.html#features",
-    "href": "index.html#features",
-    "title": "Quarto Presentation Template",
-    "section": "Features",
-    "text": "Features\nThis template includes everything you need for technical presentations:\n\nModern styling with Inter font\nSyntax-highlighted code blocks\nMermaid diagrams\nLaTeX math equations\nResponsive tables\nCallout boxes\nSpeaker notes\n\n\nPress S to open speaker view with notes and timer."
+    "objectID": "index.html#define-research---quick-write",
+    "href": "index.html#define-research---quick-write",
+    "title": "Research, Data, Ethics…",
+    "section": "Define research - Quick Write",
+    "text": "Define research - Quick Write\n\n\n\n\n\n\nIn one sentence,  what is the most important aspect of research?"
   },
   {
-    "objectID": "index.html#code-blocks",
-    "href": "index.html#code-blocks",
-    "title": "Quarto Presentation Template",
-    "section": "Code Blocks",
-    "text": "Code Blocks\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# Load and process data\ndf = pd.read_csv(\"data.csv\")\nsummary = df.groupby(\"category\").agg({\n    \"value\": [\"mean\", \"std\", \"count\"]\n})\n\n# Visualize results\nsummary.plot(kind=\"bar\", figsize=(10, 6))\nplt.title(\"Category Summary\")\nplt.tight_layout()\nplt.savefig(\"output.png\")"
+    "objectID": "index.html#research-is-guided-by-a-question",
+    "href": "index.html#research-is-guided-by-a-question",
+    "title": "Research, Data, Ethics…",
+    "section": "Research is guided by a question",
+    "text": "Research is guided by a question\n\n\n\n\n\nInciting curiosity in something\nDefine a research question to explore\nCommunicate results in a scientific article\n\n\n\nWhat is the common denominator of each step?\n“What is the research question?”"
   },
   {
-    "objectID": "index.html#data-pipeline",
-    "href": "index.html#data-pipeline",
-    "title": "Quarto Presentation Template",
-    "section": "Data Pipeline",
-    "text": "Data Pipeline\n\n\n\n\n\nflowchart LR\n    A[Source Data] --&gt; B[Extract]\n    B --&gt; C[Transform]\n    C --&gt; D[Load]\n    D --&gt; E[(Data Warehouse)]\n    E --&gt; F[Analytics]\n    E --&gt; G[Dashboards]"
+    "objectID": "index.html#the-simple-structure-a-research-question",
+    "href": "index.html#the-simple-structure-a-research-question",
+    "title": "Research, Data, Ethics…",
+    "section": "The simple structure a research question",
+    "text": "The simple structure a research question\n\nA research question is a complex sentence containing:\n\na subject,\nan independent clause, (a complete thought)\nand a dependant clause (an incomplete thought)\n\nA clause constitutes:\n\na subject\na verb"
   },
   {
-    "objectID": "index.html#sequence-diagram",
-    "href": "index.html#sequence-diagram",
-    "title": "Quarto Presentation Template",
-    "section": "Sequence Diagram",
-    "text": "Sequence Diagram\n\n\n\n\n\nsequenceDiagram\n    participant U as User\n    participant A as API\n    participant D as Database\n\n    U-&gt;&gt;A: Request data\n    A-&gt;&gt;D: Query\n    D--&gt;&gt;A: Results\n    A--&gt;&gt;U: JSON response"
+    "objectID": "index.html#step-1-identify-a-research-qustion",
+    "href": "index.html#step-1-identify-a-research-qustion",
+    "title": "Research, Data, Ethics…",
+    "section": "Step 1: Identify a Research Qustion",
+    "text": "Step 1: Identify a Research Qustion\n\n\n\nWhat is the Research Question?\n\nResearch Subject (RS): _______\nIndependent Variable (IV): _______\nDependent Variable (DV): _______\n\n\nExample question: How can we stop malaria?\n\n\nCan the pathogenic protozoa be eliminated from within a mosquito by gene drive methods?\n\nmosquito (vector of malaria)\ngene drive methods\npathogenic protozoa population"
   },
   {
-    "objectID": "index.html#mathematics",
-    "href": "index.html#mathematics",
-    "title": "Quarto Presentation Template",
-    "section": "Mathematics",
-    "text": "Mathematics\nInline equations work naturally: \\(E = mc^2\\)\nDisplay equations for complex formulas:\n\\[\n\\mathcal{L} = -\\frac{1}{4}F_{\\mu\\nu}F^{\\mu\\nu} + \\bar{\\psi}(i\\gamma^\\mu D_\\mu - m)\\psi\n\\]\n\\[\nP(A|B) = \\frac{P(B|A) \\cdot P(A)}{P(B)}\n\\]"
+    "objectID": "index.html#step-2-if-then-because",
+    "href": "index.html#step-2-if-then-because",
+    "title": "Research, Data, Ethics…",
+    "section": "Step 2: If-Then-Because",
+    "text": "Step 2: If-Then-Because\n\nA hypothesis can be as simple as sequentially using If-Then-Because\n\nIF = RS + IV\nTHEN = DV\nBecause = Reasoning and context\n\n\n\n\n\n\n\n\n\n\nIF\nTHEN\nBECAUSE\n\n\n\n\nIf gene-drive mosquitos are released in the wild\nThen the pathogenic protozoa population will be eliminated\nbecause the gene drive methods beneficially selects gene-drive mosquitos for breeding and uses two separate protozoan targets to eliminate protozoa in mosquitos."
   },
   {
-    "objectID": "index.html#two-columns",
-    "href": "index.html#two-columns",
-    "title": "Quarto Presentation Template",
-    "section": "Two Columns",
-    "text": "Two Columns\n\n\nBenefits\n\nSide-by-side comparisons\nText alongside visuals\nEfficient use of space\nClear organization\n\n\nMetrics\n\n\n\nMetric\nValue\n\n\n\n\nUsers\n12,450\n\n\nSessions\n45,230\n\n\nConversion\n3.2%\n\n\nRevenue\n$84K"
+    "objectID": "index.html#define-research---quick-write-1",
+    "href": "index.html#define-research---quick-write-1",
+    "title": "Research, Data, Ethics…",
+    "section": "Define research - Quick Write",
+    "text": "Define research - Quick Write\n\n\n\n\n\n\n\nWhat is the Research Question?\n\nResearch Subject (RS): _______\nIndependent Variable (IV): _______\nDependent Variable (DV): _______\n\nA hypothesis can be as simple as sequentially using If-Then-Because\n\nIF = RS + IV\nTHEN = DV\nBecause = Reasoning and context"
   },
   {
-    "objectID": "index.html#callouts",
-    "href": "index.html#callouts",
-    "title": "Quarto Presentation Template",
-    "section": "Callouts",
-    "text": "Callouts\n\n\n\n\n\n\nNote\n\n\nCallouts help important information stand out from the rest of your content.\n\n\n\n\n\n\n\n\n\nKeyboard Shortcuts\n\n\nPress F for fullscreen, O for overview, S for speaker notes.\n\n\n\n\n\n\n\n\n\nWarning\n\n\nAlways test your presentation in the browser you’ll use for presenting."
+    "objectID": "index.html#research-begins-and-ends-with-a-question",
+    "href": "index.html#research-begins-and-ends-with-a-question",
+    "title": "Research, Data, Ethics…",
+    "section": "Research begins and ends with a question",
+    "text": "Research begins and ends with a question\n\nAnd requires reproducibility\n\nAbility to repeat the same analysis with the same data and get the same result."
   },
   {
-    "objectID": "index.html#step-by-step-reveal",
-    "href": "index.html#step-by-step-reveal",
-    "title": "Quarto Presentation Template",
-    "section": "Step-by-Step Reveal",
-    "text": "Step-by-Step Reveal\nContent can appear incrementally:\n\nFirst, introduce your concept\nThen, add supporting details\nFinally, summarize key points\n\nThis keeps your audience focused on one idea at a time."
+    "objectID": "index.html#tabular-data-structure",
+    "href": "index.html#tabular-data-structure",
+    "title": "Research, Data, Ethics…",
+    "section": "Tabular Data Structure",
+    "text": "Tabular Data Structure\n\n\n\nEach column is a variable (a feature of the research question)\nEach row is an observation (a single data collection event)\n\n\n\n\n\n\n\n\n\n\nTable\n\n\nEmpty of data\n\n\n\nColumn_1\nColumn_2\nColumn_3\nColumn_4\n\n\n\n\n1\n\n\n\n\n\n\n2\n\n\n\n\n\n\n3\n\n\n\n\n\n\n4\n\n\n\n\n\n\n\nNo data available for the current selection."
   },
   {
-    "objectID": "index.html#comparison-table",
-    "href": "index.html#comparison-table",
-    "title": "Quarto Presentation Template",
-    "section": "Comparison Table",
-    "text": "Comparison Table\n\n\n\nFeature\nBasic\nPro\nEnterprise\n\n\n\n\nProjects\n3\n25\nUnlimited\n\n\nStorage\n1 GB\n50 GB\n500 GB\n\n\nAPI Access\n-\nLimited\nFull\n\n\nSupport\nCommunity\nEmail\nDedicated\n\n\nSSO\n-\n-\nYes"
+    "objectID": "index.html#data-types",
+    "href": "index.html#data-types",
+    "title": "Research, Data, Ethics…",
+    "section": "Data Types",
+    "text": "Data Types\n\n\n\nThere are standard atomic variables in R\nDates are an example of additional data types:\n\n2026-01-01, 2026-04-15, 2026-08-22, 2026-12-25\n\n\n\n\n\n\n\n\n\n\n\nStandard Data Types in R\n\n\nA demonstration of Character, Integer, Double, and Logical types\n\n\n\nString\nInt\nFlt\nBool\n\n\n\n\n1\nHello\n1\n0.35\nTRUE\n\n\n2\nHi\n3\n0.50\nFALSE\n\n\n3\nhi\n5\n1.03\nTRUE\n\n\n4\nMorning\n100\n2.14\nTRUE\n\n\n\nData types mapped using standard R vectors."
   },
   {
-    "objectID": "index.html#images",
-    "href": "index.html#images",
-    "title": "Quarto Presentation Template",
-    "section": "Images",
-    "text": "Images\n\nSample visualization from Unsplash"
+    "objectID": "index.html#metadata",
+    "href": "index.html#metadata",
+    "title": "Research, Data, Ethics…",
+    "section": "Metadata",
+    "text": "Metadata\n\n\n\nInformation about the data\n\nProject READMEs are high-level overviews of the project\nWorkflow diagrams are depictions of the processes within a project\nData dictionaries are categorized observations ABOUT the data\nData biographies are short, descriptive narrative about the who, what, where, when, why of a dataset.\n\nUsed to expose biases within the data!\n\n\n\n\n\n\n\n\n\n\n\n\nTypical dataframe in R\n\n\nA demonstration of metadata\n\n\n\ngreeting_used\ncount\nnorm_count\npresented_w_smile\n\n\n\n\n1\nHello\n1\n0.35\nTRUE\n\n\n2\nHi\n3\n0.50\nFALSE\n\n\n3\nhi\n5\n1.03\nTRUE\n\n\n4\nMorning\n100\n2.14\nTRUE\n\n\n\nThe datatypes are still here too!"
   },
   {
-    "objectID": "index.html#quotes",
-    "href": "index.html#quotes",
-    "title": "Quarto Presentation Template",
-    "section": "Quotes",
-    "text": "Quotes\n\nThe best way to predict the future is to invent it.\n— Alan Kay\n\nUse blockquotes for citations, testimonials, or emphasis."
-  },
-  {
-    "objectID": "index.html#get-started",
-    "href": "index.html#get-started",
-    "title": "Quarto Presentation Template",
-    "section": "Get Started",
-    "text": "Get Started\nQuick Setup\n\nClick Use this template on GitHub\nClone your repository locally\nEdit content/index.qmd\nRun make devel to preview\nRun make deploy to publish\n\nResources\n\nQuarto RevealJS Docs\nMermaid Diagram Syntax\nLaTeX Math Reference"
+    "objectID": "index.html#ethical-ramification-of-data-and-metadata",
+    "href": "index.html#ethical-ramification-of-data-and-metadata",
+    "title": "Research, Data, Ethics…",
+    "section": "Ethical ramification of Data and Metadata",
+    "text": "Ethical ramification of Data and Metadata\n\nAtenas et al. 2023 did a literature review to develop an 8-item ethics framework:\n\nRespect autonomy\nRespect privacy\nPromote fairness\nAddress equality\nDo no harm\nPromote sovereignty\nAddress bias\nChallenge power structures\n\n\n\nReframing data ethics in research methods education: a pathway to critical data literacy"
   }
 ]
